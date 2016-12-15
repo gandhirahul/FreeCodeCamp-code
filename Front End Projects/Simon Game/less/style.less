@@ -1,0 +1,242 @@
+@outercircledimension : 500px;
+@innercircledimension : 250px;
+@innercirclecolor : white;
+@outercirclecolor : #34495e;
+
+@redarccolor : rgba(255, 69, 0, 0.6);
+@bluearccolor : rgba(0,255,255,0.5);
+@yellowarccolor : rgba(255,241,0,0.75);
+@greenarccolor : rgba(10,255,0,0.5);
+
+@lightredarccolor : #ff0000;
+@lightbluearccolor : #00FFFF;
+@lightyellowarccolor : #fff100;
+@lightgreenarccolor : #0aff00;
+
+html,
+body {
+  background: #ecf0f1;
+  height: 100%;
+  font-family: cursive;
+  position: relative;
+}
+.game{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.main-content{
+  
+  .outer-circle{
+      margin : 0 auto;    
+      height: @outercircledimension;
+      width: @outercircledimension;
+      border-radius: 50%;
+      background: @outercirclecolor;
+      position: relative;
+      overflow:hidden;
+      border : 20px solid @outercirclecolor;    
+      box-sizing: content-box;
+      .inner-circle{
+        width: @innercircledimension;
+        height: @innercircledimension;
+        background: @innercirclecolor;
+        border-radius: 50%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate3d(-50%,-50%,0);
+        border: 20px solid @outercirclecolor;
+        padding: 25px;
+        .counter-input{
+          max-width: 20px;
+          margin-left: 15px;
+        }
+        #start{
+          margin-top: -37px;
+        }
+        .inner-text{
+          font-size: 30px;
+          font-weight: bolder;
+        }
+        .inner-btns-text{
+            text-align: left;
+            margin-left: 15px;
+        }
+        .inner-btns{
+          width:100%;
+        }
+        .info-div{
+          margin:10px 0;
+        }
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
+          margin-left: -20px;
+        }
+
+        /* Hide default HTML checkbox */
+        .switch input {display:none;}
+
+        /* The slider */
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 26px;
+          width: 26px;
+          left: 4px;
+          bottom: 4px;
+          background-color: white;
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+
+        input:checked + .slider {
+          background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+          box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+          -webkit-transform: translateX(26px);
+          -ms-transform: translateX(26px);
+          transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+          border-radius: 34px;
+        }
+
+        .slider.round:before {
+          border-radius: 50%;
+        }
+      }
+    .arc{
+      position: absolute;
+      cursor:pointer;
+      height: @innercircledimension;
+      width: @innercircledimension;
+      border: 10px solid @outercirclecolor;
+    }
+    .red-arc{
+      &.highlight{
+        background: @lightredarccolor;  
+      }
+      top: 0;
+      left: 50%;
+      background: @redarccolor;
+      border-right: 0;
+      border-top: 0;
+    }
+    .blue-arc{
+      &.highlight{
+        background: @lightbluearccolor;  
+      }
+      left: 50%;
+      bottom: 0;
+      background: @bluearccolor;
+      border-right: 0;
+      border-bottom: 0;
+    }
+    .yellow-arc{
+      &.highlight{
+        background: @lightyellowarccolor;  
+      }
+      left: 0;
+      bottom: 0;
+      background: @yellowarccolor;
+      border-left: 0;
+      border-bottom: 0;
+    }
+    .green-arc{
+      &.highlight{
+        background: @lightgreenarccolor;  
+      }
+      left: 0;
+      top: 0;
+      background: @greenarccolor;
+      border-left: 0;
+      border-top: 0;
+    }
+  }
+}
+.footer-content {
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  background: #1d2326;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  box-shadow: 0 -6px #6da768;
+  .footer-text{
+    float:left;
+  }
+  .centered{
+    float: right;
+  }
+  ul,li{
+    display:inline-block;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  a{
+    color: #678eb2;
+    padding: 8px;
+    transition: 0.3s;
+    &:hover{
+      box-shadow: inset 0 -4px #678EB2;
+    }
+  }
+}
+// utility classes
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.tb {
+  display: table;
+  .h-100;
+}
+
+.tr {
+  display: table-row;
+  .h-100;
+}
+
+.tc {
+  display: table-cell;
+  .h-100;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.disable {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.failure-animation{
+  transform: scale(1.1,1.1);
+}

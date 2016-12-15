@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Simon Game">
+<meta name="author" content="Rahul gandhi">
+
+<title>Simon Game for FCC</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+  <div class="container h-100">
+  <div class="row h-100 tb w-100">
+    <div class="content-wrapper h-100 tc">
+      <div class="game">Simon Game - Original 80's memory game</div>
+      
+      <div class="main-content">
+        <div class="outer-circle">
+          <div class='red-arc arc'  id="1"></div>
+          <div class='blue-arc arc' id="2"></div>
+          <div class='yellow-arc arc' id="3"></div>
+          <div class='green-arc arc' id="4"></div>
+          <div class='inner-circle'>
+            <div class="inner-btns-text">ON/OFF</div>
+            <div class='inner-btns'>
+              <label class="switch">
+                <input type="checkbox" id='start-checkbox'>
+                <div class="slider round"></div>
+              </label>
+              <button class="btn" id="start">Start</button>
+            </div>
+            <div class='info-div'>
+              Level:<input id="counter" class="counter-input" disabled></input>
+            </div>
+            <span id="info"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-content">
+  <div class="container">
+    <span class="footer-text"><span class="hidden-xs">Developed</span> By Rahul Gandhi</span>
+    <ul class="centered">
+              <a href="https://codepen.io/gandhi_rahul"><li><i class="fa fa-codepen"></i><span class="hidden-xs">CodePen</span></li></a>
+              <a href="https://www.linkedin.com/in/rahulgandhi92"><li><i class="fa fa-linkedin-square"></i><span class="hidden-xs"> LinkedIn</span></li></a>
+              <a href="https://github.com/gandhirahul"><li><i class="fa fa-github"></i><span class="hidden-xs"> Github</span></li></a>
+              <a href="http://freecodecamp.com/gandhirahul"><li>(<i class="fa fa-fire"></i>) <span class="hidden-xs"> FreeCodeCamp</span></li></a>
+              <a href="https://facebook.com/rahulgandhi92"><li><i class="fa fa-facebook"></i> <span class="hidden-xs">Facebook</span></li></a>
+            </ul>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
