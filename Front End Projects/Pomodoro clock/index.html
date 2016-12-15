@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pomodoro Clock">
+  <meta name="author" content="Rahul gandhi">
+
+  <title>Pomodoro Clock for FCC</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+  <div class="container h-100">
+  <div class="row h-100">
+      <div class="content-wrapper col-xs-12 col-sm-offset-4 col-sm-4 h-100 tb">
+        <div class="tr">
+        <div class="tc">
+          <div class="main-content">
+            <div class="intro">
+              <div class='intro-head' title="The Pomodoro timer is a well-known productivity interval that has been shown to improve your productivity.It gives you a prescribed interval of 25 minutes of work followed by a 5-minute break. After 4 work intervals, there is a 15-minute break.">Pomodoro Clock</div>
+            </div>
+            <div class='ac-text'>
+              <span class='ac-text-1'>Break Length</span>
+              <span>Session Length</span>
+            </div>
+            <div class="action-btns">
+              <button id="break-value-minus" class="btn input-control" value="-">-</button>
+              <input id="break-value" class="input-control form-control inputbox"   value="5" disabled></input>
+              <button id="break-value-plus" class="btn input-control" value="+"> +</button>
+
+              <button id="session-value-minus" class="btn input-control" value="-">-</button>
+              <input id="session-value" class="input-control form-control inputbox" value="25" disabled></input>
+              <button id="session-value-plus" class=" btn input-control" value="+"> +</button>
+              <button id="start" class="input-control btn"> Start</button>
+              <button id="reset" class="btn"> Stop</button>
+            </div>
+            <div id="circle" class="circle">
+              <div id="inner-circle" class="inner-circle">
+              </div>
+              <div class="timer-det">
+                <div id="timer-text"></div>
+                <div id="timer-value" class='timer-value'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="footer-content">
+  <div class="container">
+    <span class="footer-text"><span class="hidden-xs">Developed</span> By Rahul Gandhi</span>
+    <ul class="centered">
+              <a href="https://codepen.io/gandhi_rahul"><li><i class="fa fa-codepen"></i><span class="hidden-xs">CodePen</span></li></a>
+              <a href="https://www.linkedin.com/in/rahulgandhi92"><li><i class="fa fa-linkedin-square"></i><span class="hidden-xs"> LinkedIn</span></li></a>
+              <a href="https://github.com/gandhirahul"><li><i class="fa fa-github"></i><span class="hidden-xs"> Github</span></li></a>
+              <a href="http://freecodecamp.com/gandhirahul"><li>(<i class="fa fa-fire"></i>) <span class="hidden-xs"> FreeCodeCamp</span></li></a>
+              <a href="https://facebook.com/rahulgandhi92"><li><i class="fa fa-facebook"></i> <span class="hidden-xs">Facebook</span></li></a>
+            </ul>
+  </div>
+</div>
+  
+<script src="js/index.js"></script>
+
+</body>
+</html>
