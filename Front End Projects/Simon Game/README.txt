@@ -7,7 +7,7 @@ Follow the pattern of lights and sounds and repeat the same combination to move 
 It starts off easy but it won’t be long before you’re questioning your memory and struggling to remember the pattern. Rack up high scores, improve your memory and enjoy this classic game.
 
 
-You can find this one at http://codepen.io/gandhi_rahul/pen/BQJQRL.
+You can find this one at http://codepen.io/gandhi_rahul/full/BQJQRL.
 
 
  

@@ -122,7 +122,6 @@ function showAnimation() {
 function startSessionTimer() {
   timerValue = timerValue - 1;
   document.querySelector('#timer-value').innerHTML = convertSecToMin(timerValue);
-  console.log('fired');
   initialValue += heightIncrmnt;
   var innerCircle = document.querySelector('.inner-circle');
   innerCircle.style.height = initialValue + "%";
@@ -142,7 +141,6 @@ function startSessionTimer() {
 function startBreakTimer (){
   breakInputValue = breakInputValue - 1;
   document.querySelector('#timer-value').innerHTML = convertSecToMin(breakInputValue);
-  console.log('startBreakTimer fired');
   initialValue += breakHeightIncrmt;
   var innerCircle = document.querySelector('.inner-circle');
   innerCircle.style.height = initialValue + "%";
