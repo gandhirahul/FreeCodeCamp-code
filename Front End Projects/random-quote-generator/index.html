@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Random Quote Generator">
+<meta name="author" content="Rahul gandhi">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<title>Random Quote Generator</title>
+  
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+
+<link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div ng-app="quoteApp" ng-controller="quoteCntrl" class="app-div" ng-cloak>
+<div class="column main-content"   ng-style="{'background-color': randomColor.Code}">
+  <div class="row" >
+      <div class="col-xs-1 col-md-4" >
+      </div> 
+      
+      <div class="col-xs-10 col-md-4 quote-container" >
+        <div class="quote-text demo animated slideInDown">
+        <span ng-bind="randomQuotes[i].quote"  ng-style="{'color': randomColor.Code}">-</span>
+        </div>
+        <div class="quote-author demo animated slideInDown">
+        <span ng-bind="randomQuotes[i].author"  ng-style="{'color': randomColor.Code}"></span>
+        </div>
+        <div>  
+        <a class="twitter-share-button"
+             ng-href="https://twitter.com/intent/tweet?text='{{randomQuotes[i].quote}}-Tweeted via Quote Generator by Rahul Gandhi'"
+             target="_new" data-size="large"
+             ng-style="{'background-color': randomColor.Code}"
+           >
+          <i class="fa fa-twitter"></i>
+             </a>
+        
+        <button class="btn btn-primary" 
+                ng-click="GenerateRandom()" 
+                  ng-style="{'background-color': randomColor.Code}">New Quote
+        </button>
+        </div>
+      </div>  
+      
+      <div class="col-xs-1 col-md-4" >
+      </div>
+  </div> 
+  </div>
+</div>
+
+
+<div class="footer-content">
+  <div class="container">
+    <span class="footer-text"><span class="hidden-xs">Developed</span> By Rahul Gandhi</span>
+    <ul class="centered">
+              <a href="https://codepen.io/gandhi_rahul" target="_blank" ><li><i class="fa fa-codepen"></i><span class="hidden-xs">CodePen</span></li></a>
+              <a href="https://www.linkedin.com/in/rahulgandhi92" target="_blank"><li><i class="fa fa-linkedin-square"></i><span class="hidden-xs"> LinkedIn</span></li></a>
+              <a href="https://github.com/gandhirahul" target="_blank"><li><i class="fa fa-github"></i><span class="hidden-xs"> Github</span></li></a>
+              <a href="http://freecodecamp.com/gandhirahul" target="_blank"><li>(<i class="fa fa-fire"></i>) <span class="hidden-xs"> FreeCodeCamp</span></li></a>
+              <a href="https://facebook.com/rahulgandhi92" target="_blank"><li><i class="fa fa-facebook"></i> <span class="hidden-xs">Facebook</span></li></a>
+            </ul>
+  </div>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
